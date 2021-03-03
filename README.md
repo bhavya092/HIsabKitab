@@ -30,3 +30,6 @@ Firebase authentication was also one step where we got stuck followed by generat
 [Dhruvin Gandhi](https://github.com/dhruvin5) <br>
 [Siddharth Shah](https://github.com/sid-1207) <br>
 [Bhavya Mehta](https://github.com/bhavya092)
+
+
+<img src="https://github.com/bhavya092/HisabKitab/blob/main/App/hisabKitab-app/assets/images/logo.png">
