@@ -15,29 +15,29 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 var firebaseConfig = {
-  apiKey: "AIzaSyA_JcY_90540GyBp1dOEdOl0X5X-85Mbw0",
-  authDomain: "hisab--kitab.firebaseapp.com",
-  databaseURL: "https://hisab--kitab-default-rtdb.firebaseio.com",
-  projectId: "hisab--kitab",
-  storageBucket: "hisab--kitab.appspot.com",
-  messagingSenderId: "404112265272",
-  appId: "1:404112265272:web:30d5b0d4148f87523ad6cd",
-  measurementId: "G-HEBD2LNDSC",
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: "",
 };
 var counterP=100;
 var counterS=100;
 var serviceAccount = require("./permissions.json");
 const { chownSync } = require("fs");
 firebase.initializeApp({
-  apiKey: "AIzaSyA_JcY_90540GyBp1dOEdOl0X5X-85Mbw0",
+  apiKey: "",
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://hisab--kitab-default-rtdb.firebaseio.com"
+  databaseURL: ""
 });
 
 admin.initializeApp({
-  apiKey: "AIzaSyA_JcY_90540GyBp1dOEdOl0X5X-85Mbw0",
+  apiKey: "",
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://hisab--kitab-default-rtdb.firebaseio.com",
+  databaseURL: "",
 });
 const db = admin.firestore();
 app.get("/", (req, res) => {
